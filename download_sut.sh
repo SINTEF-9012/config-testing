@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SUT_URL="https://github.com/vassik/bvr-diversity.git"
+SUT_URL="https://github.com/SINTEF-9012/bvr-diversity.git"
 SUT_NAME="bvr-diversity"
 
 if [[ -d $SUT_NAME ]]; then
