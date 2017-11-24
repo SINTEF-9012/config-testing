@@ -25,10 +25,6 @@ RUN mkdir workingdir \
 	curl \
 	ca-certificates \
 	openssh-server \
-	gcc \
-	make \
-	nodejs \
-	npm \
 	ant \
 	ant-optional
 
