@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "Launcing amplifier!"
+echo "Launching amplifier!"
 cd stamp-samples/xwiki-mono
-docker run -it -v $(pwd):/root/workingdir songhui/stamp-config-amp
+docker run -v $(pwd):/root/workingdir songhui/stamp-config-amp

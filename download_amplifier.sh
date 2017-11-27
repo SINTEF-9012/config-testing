@@ -4,7 +4,7 @@ SUT_URL="https://github.com/songhui/stamp-samples.git"
 SUT_NAME="stamp-samples"
 
 if [[ -d $SUT_NAME ]]; then
-	echo "stamp-sampleshas been already downloaded, cleaning, updating..."
+	echo "stamp-samples has been already downloaded, cleaning, updating..."
 	cd $SUT_NAME
 	git reset --hard
 	git clean -fd
