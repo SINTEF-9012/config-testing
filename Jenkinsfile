@@ -3,8 +3,14 @@ node {
       //git "https://github.com/vassik/third-party-tool.git"
       checkout scm
    }
-   stage('Downloading a tool and building') {
+   stage('Downloading a tool') {
       sh "./download_sut.sh"
+   }
+   stage('Amplyfication') {
+      sh "./download_amplifier.sh"
+      sh "./set_up_amplifier.sh"
+      sh "./launch_amplifier.sh"
+      sh "./set_up_ctf.sh"
    }
    stage('Testing') {
       sh "./testframework/test.py"
