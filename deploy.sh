@@ -2,8 +2,8 @@
 
 IMAGE=vassik/config-testing:latest
 APP=config-testing
-SHARED=/tmp/testing_report
-SUT=bvr-diversity
+SHARED=tmp/testing_report
+SUT=xwiki-platform
 
 if [[ -n $1 ]]; then
 	DOCKERGID=$1
