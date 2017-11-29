@@ -5,6 +5,12 @@ node {
    stage('Downloading SUT') {
       sh "./download_sut.sh"
    }
+   stage('Amplification') {
+      sh "./download_amplifier.sh"
+      sh "./set_up_amplifier.sh"
+      sh "./launch_amplifier.sh"
+      sh "./set_up_ctf.sh"
+   }
    stage('Testing') {
       sh "./testframework/test.py"
    }
