@@ -45,9 +45,9 @@ def check_and_print_std(stdout, stderr):
 	return 0
 
 def check_maven_build_failure(stdout):
-	failure_str = 'BUILD FAILURE'
-	match = re.search(failure_str, stdout)
-	if not match:
+	success_str = 'BUILD SUCCESS'
+	match = re.search(success_str, stdout)
+	if match:
 		return 0
 
 	stderrprint("MAVEN BUILD FAILURE\n")
